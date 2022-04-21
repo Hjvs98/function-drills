@@ -76,8 +76,8 @@
 //   let name = input;
 
 //   function greeting(name) {
-//     console.log(`Hello, ${name}`);
 //     return name;
+//     console.log(`Hello, ${name}`);
 //   }
 //   greeting(name);
 
@@ -100,17 +100,16 @@
 
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
-
-// function compareNums(num1, num2) {
+// const compareNums = (num1, num2) => {
 //   if (num1 > num2) {
-//     console.log(num1);
+//     return num1;
 //   } else if (num1 < num2) {
-//     console.log(num2);
+//     return num2;
 //   } else {
-//     console.log(`${num1}, ${num2}`);
+//     return `${num1}, ${num2}`;
 //   }
-// }
-// compareNums(13, 13);
+// };
+// console.log(compareNums(13, 13));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -120,12 +119,12 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-function add(firstInput, secondInput) {
-  return parseInt(firstInput) + parseInt(secondInput);
-}
-add(13, 55);
+// function add(firstInput, secondInput) {
+//   return parseInt(firstInput) + parseInt(secondInput);
+// }
+// let sum = add("9ft", "15mg");
 
-let sum = add(13, 55);
+// console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -157,12 +156,12 @@ let sum = add(13, 55);
 // declaration
 // expression
 
-/*
-  Rewrite exclaimTwo to be a single line.
-  Call your new function exclaimThree
-const exclaimThree = () => str.toUpperCase() + "!!!"
-  Brownie points if you use a template string
-*/
+//Rewrite exclaimTwo to be a single line.
+//Call your new function exclaimThree
+// const exclaimThree = (str) => str.toUpperCase() + "!!!";
+
+// console.log(exclaimThree("stop"));
+//Brownie points if you use a template string
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -187,6 +186,18 @@ const exclaimThree = () => str.toUpperCase() + "!!!"
   If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
+// function nameCheck(NAMEPARAM) {
+//   if (NAMEPARAM === "Steven" || NAMEPARAM === "steven") {
+//     return "What's up Steven";
+//   } else if (NAMEPARAM === "Bryan" || NAMEPARAM === "bryan") {
+//     return "Hey Bryan!";
+//   } else {
+//     return `Cool name, ${NAMEPARAM}`;
+//   }
+// }
+// console.log(nameCheck("James"));
+
+//////////OR////////////
 // const readline = require("readline");
 
 // const reader = readline.createInterface({
@@ -221,6 +232,22 @@ const exclaimThree = () => str.toUpperCase() + "!!!"
   Otherwise, you should return the string 'you need to evaluate your favorite color choice'
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
+
+// function faveColorFinder(color) {
+//   if (color === "red" || color === "Red") {
+//     return "red is a great color";
+//   } else if (color === "green" || color === "Green") {
+//     return "green is a solid favorite color";
+//   } else if (color === "black" || color === "Black") {
+//     return "so trendy";
+//   } else {
+//     return "you need to evaluate your favorite color choice";
+//   }
+// }
+// let colorRating = faveColorFinder(color);
+// console.log(colorRating);
+
+///////////OR////////////
 // const readline = require("readline");
 
 // const reader = readline.createInterface({
@@ -268,6 +295,17 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
   Otherwise, return 'That is odd indeed!'
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
+// function thatsOdd(num) {
+//   if (parseInt(num) % 2 === 0) {
+//     return "That's not odd!";
+//   } else {
+//     return "That is odd indeed!";
+//   }
+// }
+// let oddChecker = thatsOdd(num);
+
+// console.log(oddChecker);
+///////////OR//////////////
 // const readline = require("readline");
 
 // const reader = readline.createInterface({
@@ -302,6 +340,8 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 // ??
 // const bestMovie = (MOVIEPARAM) => `${MOVIEPARAM} is the best movie ever!`;
 
+// console.log(bestMovie(MOVIEPARAM));
+
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
 /* 
@@ -312,8 +352,20 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
   If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. 
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
+//??
 
-//CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  for (let i = 0; i < bigOrSmallArray.length; i++) {
+    if (bigOrSmallArray[i] > 100) {
+      return answers.push("big");
+    } else {
+      return answers.push("small");
+    }
+  }
+  console.log(answers);
+}
+console.log(bigOrSmall(bigOrSmallArray));
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = [
@@ -332,8 +384,12 @@ let loser = "Glimmer";
   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
-
-//CODE HERE
+// ??
+// function theEliminator(contestants,loser) {
+//   for (let i = 0; i < contestants.length; i++) {
+//   return contestants[i]
+//   }
+// }
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo.";
@@ -341,8 +397,10 @@ let sampleString = "Hi, my name is Kylo.";
   Write a function that takes in one argument, a string. The function should then console.log that string, in entirely uppercase characters.
   Invoke the function, passing in the sampleString (above).
 */
-
-//CODE HERE
+// function stringWork(str) {
+//   return str.toUpperCase();
+// }
+// console.log(stringWork(sampleString));
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -354,14 +412,29 @@ let sampleString = "Hi, my name is Kylo.";
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+// function emailCheck(email) {
+//   if (email.includes("@") && email.includes(".com")) {
+//     return `The email ${String(email.trim())} is verified`;
+//   } else {
+//     return `${String(email.trim())} is not a valid email address`;
+//   }
+// }
+// console.log(emailCheck("  hunter@gmail.com   "));
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
-
-//CODE HERE
+// let frogNumber = [];
+// function frogPurchase(startingMoney) {
+//   while (startingMoney >= 3) {
+//     frogNumber.push("frog");
+//     startingMoney -= 3;
+//   }
+//   console.log(frogNumber.length);
+// }
+// let totalFrogs = frogPurchase(50);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
