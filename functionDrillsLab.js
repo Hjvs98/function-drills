@@ -337,7 +337,7 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
 //   }
 //   console.log(answers);
 // }
-// bigOrSmall(bigOrSmallArray);
+// let arrayEvaluator = bigOrSmall(bigOrSmallArray);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = [
@@ -357,11 +357,17 @@ let loser = "Glimmer";
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 // ??
-// function theEliminator(contestants,loser) {
-//   for (let i = 0; i < contestants.length; i++) {
-//   return contestants[i]
+// function theEliminator(contestantsarr, loserstr) {
+//   let newContestants = contestantsarr.push(loserstr);
+
+//   for (let i = 0; i < contestantsarr.length; i++) {
+//     if (newContestants.includes("Glimmer")) {
+//       console.log(newContestants.replace(loserstr, ""));
+//     }
+//     return newContestants[i];
 //   }
 // }
+// console.log(theEliminator(contestants, loser));
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo.";
@@ -398,8 +404,9 @@ let sampleString = "Hi, my name is Kylo.";
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
-// const frogCost = 5;
+// const frogCost = 3; //created this variable because inflation is so bad rn and idk if the price is going to gop up for chocolate frogs soon.//
 // let frogNumber = [];
+
 // function frogPurchase(startingMoney) {
 //   while (startingMoney >= frogCost) {
 //     frogNumber.push("frog");
@@ -421,11 +428,11 @@ let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
 /*
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
-// ??
+
 // function ascendingCheck(array) {
 //   let answers = [];
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] < array[i++]) {
+//   for (let i = 0; i < array.length - 1; i++) {
+//     if (array[i] < array[i + 1]) {
 //       answers.push("true");
 //     } else {
 //       answers.push("false");
@@ -458,15 +465,15 @@ function pond() {
   All within different scopes.
   Given the functions and variables above, edit the arrays below to contain only the appropriate variable names (as strings).
 */
-
+//??
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = [];
+let globalScope = ["cute", "squeaky", "nautical", "fluffy"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = [];
+let bathroomScope = ["squeaky", "nautical"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = [];
+let bathtubScope = ["nautical"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = [];
+let pondScope = ["fluffy"];
