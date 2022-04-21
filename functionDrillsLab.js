@@ -13,7 +13,6 @@
 // function helloWorld() {
 //   console.log("Hello, World!");
 // }
-
 // helloWorld();
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -21,7 +20,6 @@
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
-// ??
 // const jsNinja = () => "I am a JavaScript ninja!";
 
 // console.log(jsNinja());
@@ -32,7 +30,14 @@
   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
   Call the function, passing in an argument.
 */
-// const readline = require("readline");
+
+// function printName(name) {
+//   return name;
+// }
+// console.log(printName(name));
+
+////////OR/////////
+//const readline = require("readline");
 
 // const reader = readline.createInterface({
 //   input: process.stdin,
@@ -49,11 +54,6 @@
 
 //   reader.close();
 // });
-////////OR/////////
-// function printName(name) {
-//   return name;
-// }
-// console.log(printName("Cameron"));
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -66,6 +66,12 @@
   Make sure to call your function and pass in an argument.
 */
 
+// function greeting(name) {
+//   return `Hello, ${String(name)}` ;
+// }
+// console.log(greeting());
+
+/////////OR//////////
 // const readline = require("readline");
 
 // const reader = readline.createInterface({
@@ -83,12 +89,6 @@
 
 //   reader.close();
 // });
-/////////OR//////////
-
-// function greeting(name) {
-//   return `Hello,` + String(name);
-// }
-// console.log(greeting(" Hunter"));
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -100,7 +100,7 @@
 
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
-// const compareNums = (num1, num2) => {
+// const compareNums = (num1,num2) => {
 //   if (num1 > num2) {
 //     return num1;
 //   } else if (num1 < num2) {
@@ -109,7 +109,7 @@
 //     return `${num1}, ${num2}`;
 //   }
 // };
-// console.log(compareNums(13, 13));
+// console.log(compareNums(num1,num2));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -158,9 +158,10 @@
 
 //Rewrite exclaimTwo to be a single line.
 //Call your new function exclaimThree
-// const exclaimThree = (str) => str.toUpperCase() + "!!!";
 
+//const exclaimThree = (str) => str.toUpperCase() + "!!!";
 // console.log(exclaimThree("stop"));
+
 //Brownie points if you use a template string
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -195,7 +196,7 @@
 //     return `Cool name, ${NAMEPARAM}`;
 //   }
 // }
-// console.log(nameCheck("James"));
+// console.log(nameCheck(NAMEPARAM));
 
 //////////OR////////////
 // const readline = require("readline");
@@ -247,33 +248,6 @@
 // let colorRating = faveColorFinder(color);
 // console.log(colorRating);
 
-///////////OR////////////
-// const readline = require("readline");
-
-// const reader = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// });
-// reader.question("Please enter your favorite color: ", function (input) {
-//   let faveColor = input;
-//   let faveColorAdj = faveColor.toLowerCase().toString();
-
-//   function faveColorFinder(faveColorAdj) {
-//     if (faveColorAdj === "red") {
-//       console.log("red is a great color");
-//     } else if (faveColorAdj === "green") {
-//       console.log("green is a solid favorite color");
-//     } else if (faveColorAdj === "black") {
-//       console.log("so trendy");
-//     } else {
-//       console.log("you need to evaluate your favorite color choice");
-//     }
-//   }
-//   let colorRating = faveColorFinder(faveColorAdj);
-
-//   reader.close();
-// });
-
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 /*
@@ -288,6 +262,7 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 //   }
 // }
 // printAllNames(namesArr);
+
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
@@ -303,8 +278,8 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 //   }
 // }
 // let oddChecker = thatsOdd(num);
-
 // console.log(oddChecker);
+
 ///////////OR//////////////
 // const readline = require("readline");
 
@@ -337,9 +312,7 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-// ??
 // const bestMovie = (MOVIEPARAM) => `${MOVIEPARAM} is the best movie ever!`;
-
 // console.log(bestMovie(MOVIEPARAM));
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -353,19 +326,18 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 //??
-
-function bigOrSmall(arr) {
-  let answers = [];
-  for (let i = 0; i < bigOrSmallArray.length; i++) {
-    if (bigOrSmallArray[i] > 100) {
-      return answers.push("big");
-    } else {
-      return answers.push("small");
-    }
-  }
-  console.log(answers);
-}
-console.log(bigOrSmall(bigOrSmallArray));
+// function bigOrSmall(arr) {
+//   let answers = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 100) {
+//       console.log(answers.push("big"));
+//     } else {
+//       console.log(answers.push("small"));
+//     }
+//   }
+//   console.log(answers);
+// }
+// bigOrSmall(bigOrSmallArray);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = [
@@ -426,29 +398,46 @@ let sampleString = "Hi, my name is Kylo.";
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
+// const frogCost = 5;
 // let frogNumber = [];
 // function frogPurchase(startingMoney) {
-//   while (startingMoney >= 3) {
+//   while (startingMoney >= frogCost) {
 //     frogNumber.push("frog");
-//     startingMoney -= 3;
+//     startingMoney -= frogCost;
 //   }
 //   console.log(frogNumber.length);
 // }
-// let totalFrogs = frogPurchase(50);
+// let totalFrogs = frogPurchase(61);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
-//CODE HERE
+//I DIDN'T HAVE ANY BUGS THE WAY I CREATED MY CODE.
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
 /*
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
-
+// ??
+// function ascendingCheck(array) {
+//   let answers = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] < array[i++]) {
+//       answers.push("true");
+//     } else {
+//       answers.push("false");
+//     }
+//   }
+//   if (answers.includes("false")) {
+//     console.log("false");
+//   } else {
+//     console.log("true");
+//   }
+// }
+// ascendingCheck(sampleArray);
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
