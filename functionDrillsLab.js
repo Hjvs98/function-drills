@@ -10,19 +10,19 @@
   Call the function.
 */
 
-// function helloWorld() {
-//   console.log("Hello, World!");
-// }
-// helloWorld();
+function helloWorld() {
+  console.log("Hello, World!");
+}
+helloWorld();
 
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
-// const jsNinja = () => "I am a JavaScript ninja!";
+const jsNinja = () => "I am a JavaScript ninja!";
 
-// console.log(jsNinja());
+console.log(jsNinja());
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,29 +31,29 @@
   Call the function, passing in an argument.
 */
 
-// function printName(name) {
-//   return name;
-// }
+function printName(name) {
+  return name;
+}
 // console.log(printName(name));
 
 ////////OR/////////
-//const readline = require("readline");
+const readline = require("readline");
 
-// const reader = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// });
-// reader.question("Please enter your name: ", function (input) {
-//   let name = input;
+const reader = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+reader.question("Please enter your name: ", function (input) {
+  let name = input;
 
-//   function printName() {
-//     console.log(name);
-//     return name;
-//   }
-//   printName(" ");
+  function printName() {
+    console.log(name);
+    return name;
+  }
+  printName(" ");
 
-//   reader.close();
-// });
+  reader.close();
+});
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -66,29 +66,29 @@
   Make sure to call your function and pass in an argument.
 */
 
-// function greeting(name) {
-//   return `Hello, ${String(name)}` ;
-// }
-// console.log(greeting());
+function greeting(name) {
+  return `Hello, ${String(name)}`;
+}
+console.log(greeting());
 
 /////////OR//////////
-// const readline = require("readline");
+const readline = require("readline");
 
-// const reader = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// });
-// reader.question("Please enter your name: ", function (input) {
-//   let name = input;
+const reader = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+reader.question("Please enter your name: ", function (input) {
+  let name = input;
 
-//   function greeting(name) {
-//     return name;
-//     console.log(`Hello, ${name}`);
-//   }
-//   greeting(name);
+  function greeting(name) {
+    return name;
+    console.log(`Hello, ${name}`);
+  }
+  greeting(name);
 
-//   reader.close();
-// });
+  reader.close();
+});
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -100,16 +100,16 @@
 
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
-// const compareNums = (num1,num2) => {
-//   if (num1 > num2) {
-//     return num1;
-//   } else if (num1 < num2) {
-//     return num2;
-//   } else {
-//     return `${num1}, ${num2}`;
-//   }
-// };
-// console.log(compareNums(num1,num2));
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+    return num1;
+  } else if (num1 < num2) {
+    return num2;
+  } else {
+    return `${num1}, ${num2}`;
+  }
+};
+console.log(compareNums(num1, num2));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -119,10 +119,10 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-// function add(firstInput, secondInput) {
-//   return parseInt(firstInput) + parseInt(secondInput);
-// }
-// let sum = add("9ft", "15mg");
+function add(firstInput, secondInput) {
+  return parseInt(firstInput) + parseInt(secondInput);
+}
+let sum = add("9ft", "15mg");
 
 // console.log(sum);
 
@@ -139,7 +139,7 @@
 
 // arrow
 // declaration
-// expression;
+expression;
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -152,15 +152,15 @@
 //   return str.toUpperCase() + "!!!";
 // };
 
-// arrow;
+arrow;
 // declaration
 // expression
 
 //Rewrite exclaimTwo to be a single line.
 //Call your new function exclaimThree
 
-//const exclaimThree = (str) => str.toUpperCase() + "!!!";
-// console.log(exclaimThree("stop"));
+const exclaimThree = (str) => str.toUpperCase() + "!!!";
+console.log(exclaimThree("stop"));
 
 //Brownie points if you use a template string
 
@@ -171,12 +171,12 @@
   Uncomment the answer underneath.
 */
 
-// function exclaimFour(str) {
-//   return str.toUpperCase() + "!!!";
-// }
+function exclaimFour(str) {
+  return str.toUpperCase() + "!!!";
+}
 
 // arrow
-// declaration;
+declaration;
 // expression
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -187,42 +187,42 @@
   If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
-// function nameCheck(NAMEPARAM) {
-//   if (NAMEPARAM === "Steven" || NAMEPARAM === "steven") {
-//     return "What's up Steven";
-//   } else if (NAMEPARAM === "Bryan" || NAMEPARAM === "bryan") {
-//     return "Hey Bryan!";
-//   } else {
-//     return `Cool name, ${NAMEPARAM}`;
-//   }
-// }
-// console.log(nameCheck(NAMEPARAM));
+function nameCheck(NAMEPARAM) {
+  if (NAMEPARAM === "Steven" || NAMEPARAM === "steven") {
+    return "What's up Steven";
+  } else if (NAMEPARAM === "Bryan" || NAMEPARAM === "bryan") {
+    return "Hey Bryan!";
+  } else {
+    return `Cool name, ${NAMEPARAM}`;
+  }
+}
+console.log(nameCheck(NAMEPARAM));
 
 //////////OR////////////
-// const readline = require("readline");
+const readline = require("readline");
 
-// const reader = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// });
-// reader.question("Please enter your name: ", function (input) {
-//   let name = input;
-//   let NAMEPARAM = name;
+const reader = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+reader.question("Please enter your name: ", function (input) {
+  let name = input;
+  let NAMEPARAM = name;
 
-//   function nameCheck(NAMEPARAM) {
-//     if (NAMEPARAM === "Steven") {
-//       console.log("What's up Steven");
-//     } else if (NAMEPARAM === "Bryan") {
-//       console.log("Hey Bryan!");
-//     } else {
-//       console.log(`Cool name, ${NAMEPARAM}`);
-//     }
-//   }
-//   nameCheck(NAMEPARAM);
-//   let nameGreeting = nameCheck(NAMEPARAM);
+  function nameCheck(NAMEPARAM) {
+    if (NAMEPARAM === "Steven") {
+      console.log("What's up Steven");
+    } else if (NAMEPARAM === "Bryan") {
+      console.log("Hey Bryan!");
+    } else {
+      console.log(`Cool name, ${NAMEPARAM}`);
+    }
+  }
+  nameCheck(NAMEPARAM);
+  let nameGreeting = nameCheck(NAMEPARAM);
 
-//   reader.close();
-// });
+  reader.close();
+});
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -234,19 +234,19 @@
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-// function faveColorFinder(color) {
-//   if (color === "red" || color === "Red") {
-//     return "red is a great color";
-//   } else if (color === "green" || color === "Green") {
-//     return "green is a solid favorite color";
-//   } else if (color === "black" || color === "Black") {
-//     return "so trendy";
-//   } else {
-//     return "you need to evaluate your favorite color choice";
-//   }
-// }
-// let colorRating = faveColorFinder(color);
-// console.log(colorRating);
+function faveColorFinder(color) {
+  if (color === "red" || color === "Red") {
+    return "red is a great color";
+  } else if (color === "green" || color === "Green") {
+    return "green is a solid favorite color";
+  } else if (color === "black" || color === "Black") {
+    return "so trendy";
+  } else {
+    return "you need to evaluate your favorite color choice";
+  }
+}
+let colorRating = faveColorFinder(color);
+//console.log(colorRating);
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
@@ -256,12 +256,12 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
   Call the function, passing in the `namesArr` array (above).
 */
 
-// function printAllNames(namesArr) {
-//   for (let i = 0; i < namesArr.length; i++) {
-//     console.log(namesArr[i]);
-//   }
-// }
-// printAllNames(namesArr);
+function printAllNames(namesArr) {
+  for (let i = 0; i < namesArr.length; i++) {
+    console.log(namesArr[i]);
+  }
+}
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -270,37 +270,37 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
   Otherwise, return 'That is odd indeed!'
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
-// function thatsOdd(num) {
-//   if (parseInt(num) % 2 === 0) {
-//     return "That's not odd!";
-//   } else {
-//     return "That is odd indeed!";
-//   }
-// }
-// let oddChecker = thatsOdd(num);
+function thatsOdd(num) {
+  if (parseInt(num) % 2 === 0) {
+    return "That's not odd!";
+  } else {
+    return "That is odd indeed!";
+  }
+}
+let oddChecker = thatsOdd(num);
 // console.log(oddChecker);
 
 ///////////OR//////////////
-// const readline = require("readline");
+const readline = require("readline");
 
-// const reader = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// });
-// reader.question("Please enter a number to check: ", function (input) {
-//   let num = input;
-//   let numAdj = parseInt(num);
+const reader = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+reader.question("Please enter a number to check: ", function (input) {
+  let num = input;
+  let numAdj = parseInt(num);
 
-//   function thatsOdd(numAdj) {
-//     if (numAdj % 2 === 0) {
-//       console.log("That's not odd!");
-//     } else {
-//       console.log("That is odd indeed!");
-//     }
-//   }
-//   const oddChecker = thatsOdd(num);
-//   reader.close();
-// });
+  function thatsOdd(numAdj) {
+    if (numAdj % 2 === 0) {
+      console.log("That's not odd!");
+    } else {
+      console.log("That is odd indeed!");
+    }
+  }
+  const oddChecker = thatsOdd(num);
+  reader.close();
+});
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -312,7 +312,7 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-// const bestMovie = (MOVIEPARAM) => `${MOVIEPARAM} is the best movie ever!`;
+const bestMovie = (MOVIEPARAM) => `${MOVIEPARAM} is the best movie ever!`;
 // console.log(bestMovie(MOVIEPARAM));
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -338,7 +338,7 @@ function bigOrSmall(arr) {
   return answers;
 }
 let arrayEvaluator = bigOrSmall(bigOrSmallArray);
-console.log(arrayEvaluator);
+// console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = [
@@ -358,14 +358,14 @@ let loser = "Glimmer";
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-// function theEliminator(contestantsarr, loserstr) {
-//   for (let i = 0; i < contestantsarr.length; i++) {
-//     if (contestantsarr[i] === loserstr) {
-//       contestantsarr.splice(i, 1);
-//     }
-//   }
-//   return contestantsarr;
-// }
+function theEliminator(contestantsarr, loserstr) {
+  for (let i = 0; i < contestantsarr.length; i++) {
+    if (contestantsarr[i] === loserstr) {
+      contestantsarr.splice(i, 1);
+    }
+  }
+  return contestantsarr;
+}
 // console.log(theEliminator(contestants, loser));
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -374,9 +374,9 @@ let sampleString = "Hi, my name is Kylo.";
   Write a function that takes in one argument, a string. The function should then console.log that string, in entirely uppercase characters.
   Invoke the function, passing in the sampleString (above).
 */
-// function stringWork(str) {
-//   return str.toUpperCase();
-// }
+function stringWork(str) {
+  return str.toUpperCase();
+}
 // console.log(stringWork(sampleString));
 
 ////////////////// PROBLEM 18 ////////////////////
@@ -389,13 +389,13 @@ let sampleString = "Hi, my name is Kylo.";
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
-// function emailCheck(email) {
-//   if (email.includes("@") && email.includes(".com")) {
-//     return `The email ${String(email.trim())} is verified`;
-//   } else {
-//     return `${String(email.trim())} is not a valid email address`;
-//   }
-// }
+function emailCheck(email) {
+  if (email.includes("@") && email.includes(".com")) {
+    return `The email ${String(email.trim())} is verified`;
+  } else {
+    return `${String(email.trim())} is not a valid email address`;
+  }
+}
 // console.log(emailCheck("  hunter@gmail.com   "));
 
 ////////////////// PROBLEM 19 ////////////////////
@@ -403,24 +403,38 @@ let sampleString = "Hi, my name is Kylo.";
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
-// const frogCost = 3; //created this variable because inflation is so bad rn and idk if the price is going to gop up for chocolate frogs soon.//
-// let frogNumber = [];
 
-// function frogPurchase(startingMoney) {
-//   while (startingMoney >= frogCost) {
-//     frogNumber.push("frog");
-//     startingMoney -= frogCost;
-//   }
-//   console.log(frogNumber.length);
-// }
-// let totalFrogs = frogPurchase(61);
+let frogNumber = [];
+const frogCost = 3; //created this variable because inflation is so bad rn and idk if the price is going to gop up for chocolate frogs soon.//
+
+function frogPurchase(startingMoney) {
+  return startingMoney / frogCost;
+}
+console.log(frogPurchase(startingMoney));
+
+/////////OR///////////
+let frogNumber = [];
+const frogCost = 3;
+
+function frogPurchase(startingMoney) {
+  while (startingMoney >= frogCost) {
+    frogNumber.push("frog");
+    startingMoney -= frogCost;
+  }
+  console.log(frogNumber.length);
+}
+let totalsFrogs = frogPurchase(startingMoney);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
+const frogCost = 3; //created this variable because inflation is so bad rn and idk if the price is going to gop up for chocolate frogs soon.//
 
-//I DIDN'T HAVE ANY BUGS THE WAY I CREATED MY CODE.
+function frogPurchase(startingMoney) {
+  return Math.floor(startingMoney / frogCost);
+}
+console.log(frogPurchase(startingMoney));
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
@@ -428,22 +442,22 @@ let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
-// function ascendingCheck(array) {
-//   let answers = [];
-//   for (let i = 0; i < array.length - 1; i++) {
-//     if (array[i] < array[i + 1]) {
-//       answers.push("true");
-//     } else {
-//       answers.push("false");
-//     }
-//   }
-//   if (answers.includes("false")) {
-//     console.log("false");
-//   } else {
-//     console.log("true");
-//   }
-// }
-// ascendingCheck(sampleArray);
+function ascendingCheck(array) {
+  let answers = [];
+  for (let i = 0; i < array.length - 1; i++) {
+    if (array[i] < array[i + 1]) {
+      answers.push("true");
+    } else {
+      answers.push("false");
+    }
+  }
+  if (answers.includes("false")) {
+    console.log("false");
+  } else {
+    console.log("true");
+  }
+}
+ascendingCheck(sampleArray);
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
