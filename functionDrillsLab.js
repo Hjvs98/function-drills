@@ -410,7 +410,8 @@ const frogCost = 3; //created this variable because inflation is so bad rn and i
 function frogPurchase(startingMoney) {
   return startingMoney / frogCost;
 }
-console.log(frogPurchase(startingMoney));
+const totalFrogs = frogPurchase(startingMoney);
+console.log(totalFrogs);
 
 /////////OR///////////
 let frogNumber = [];
@@ -434,7 +435,8 @@ const frogCost = 3; //created this variable because inflation is so bad rn and i
 function frogPurchase(startingMoney) {
   return Math.floor(startingMoney / frogCost);
 }
-console.log(frogPurchase(startingMoney));
+const totalFrogz = frogPurchase(startingMoney);
+console.log(totalFrogz);
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
