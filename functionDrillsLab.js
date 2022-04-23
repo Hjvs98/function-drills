@@ -69,7 +69,7 @@ reader.question("Please enter your name: ", function (input) {
 function greeting(name) {
   return `Hello, ${String(name)}`;
 }
-console.log(greeting());
+//console.log(greeting(name));
 
 /////////OR//////////
 const readline = require("readline");
@@ -109,7 +109,14 @@ const compareNums = (num1, num2) => {
     return `${num1}, ${num2}`;
   }
 };
-console.log(compareNums(num1, num2));
+//console.log(compareNums(num1, num2));
+
+////////////OR/////////////
+// return num1 > num2 ?
+//         num1 :
+//         num2;//ternary
+////////////OR/////////////
+//return Math.max(num1, num2)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
